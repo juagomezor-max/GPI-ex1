@@ -1,0 +1,3 @@
+- JULIO GOMEZ
+- 202315618
+- Soy Julio, Ingeniero Mecánico de la UNAL, metí este curso por que me llamó la atención el título y considero que tiene potencial de ser interesante. No tengo realmente altas expectativas sobre lo que aprenderé, pero eso me da la tranquilidad de valorar y disfrutar lo que se venga.
