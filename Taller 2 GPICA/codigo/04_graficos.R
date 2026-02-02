@@ -5,13 +5,26 @@
 # 1. LIMPIAR EL ENTORNO
 rm(list = ls())
 
-# 2. CARGAR PAQUETES REQUERIDOS
+# 2. DESACTIVAR DISPOSITIVO PDF POR DEFECTO
+pdf(NULL)
+
+# 3. CARGAR PAQUETES REQUERIDOS
 library(dplyr)
 library(readr)
 library(ggplot2)
 library(plotly)
-library(gridExtra)
 
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(readr)
+  library(ggplot2)
+  library(plotly)
+})
+
+suppressWarnings({
+  # code
+})
+ 
 # 3. CARGAR DATOS
 cleaned_data <- read_csv("data/clean/cleaned_data.csv")
 analysis_results <- read_csv("resultados/analysis_results.csv")
@@ -157,3 +170,6 @@ cat(strrep("=", 60), "\n")
 cat("¡Todos los gráficos se crearon correctamente!\n")
 cat("Ubicación: resultados/\n")
 cat(strrep("=", 60), "\n")
+
+# 5. CERRAR DISPOSITIVOS GRÁFICOS
+dev.off()
